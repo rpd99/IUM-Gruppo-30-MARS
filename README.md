@@ -1,2 +1,3 @@
-# MARS
-Cow monitoring system
+# MARS - Cow monitoring system
+
+[IUM Project]

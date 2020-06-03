@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="stile.css" type="text/css">
+  <link rel="stylesheet" href="Untitled.css">
+</head>
+
+<body onload="caricamentoPagina('Dettaglio animale: ')">
+  <nav class="navbar navbar-expand-md navbar-light pt-0">
+    <div class="container-fluid"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar6">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar6"> <a class="navbar-brand text-primary d-none d-md-block" href="#">
+          <img src="logoModificato.png" width="120" height="120" class="d-inline-block align-top" alt="" style=""></a>
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item" style=""> <a class="nav-link" href="home.html">Home</a> </li>
+          <li class="nav-item" style="	box-shadow: 0px 0px 4px  black;"> <a class="nav-link active" href="dettaglioAnimale.html">Dettaglio animale</a> </li>
+          <li class="nav-item" style=""> <a class="nav-link" href="latte.html">Qualità latte</a> </li>
+          <li class="nav-item" style=""> <a class="nav-link" href="farmaci.html">Farmaci</a> </li>
+          <li class="nav-item" style=""> <a class="nav-link" href="ruminazione.html">Ruminazione</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="calori.html">Calori</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="notifiche.html">Notifiche</a> </li>
+          <li class="nav-item" style=""> <a class="nav-link" href="veterinario.html">Contatta veterinario</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Impostazioni</a> </li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="nav-item"><a class="navbar-brand" href="login.html"><i class="fa fa-sign-out"></i>Logout</a></div>
+      </div>
+    </div>
+  </nav>
+  <div class="w-100 h-100 py-0 px-0 pt-2" style="">
+    <div class="container">
+      <div class="row h-100 w-100">
+        <div class="m-0 destra h-100 col-md-3" style="">
+          <div class="input-group input-group-lg">
+            <input type="text" id="barra-ricerca" placeholder="Cerca" onkeyup="ricerca('barra-ricerca', 'elenco')" class="form-control w-75">
+            <div class="input-group-append"><button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></div>
+          </div>
+          <ul id="elenco" class="list-group m-0 laterale p-0 text-right lista h-100">
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000001"><a href="infoAnimale.html?id=ID000001" class="text-dark text-decoration-none">ID000001 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000002"><a href="infoAnimale.html?id=ID000002" class="text-dark text-decoration-none">ID000002 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000003"><a href="infoAnimale.html?id=ID000003" class="text-dark text-decoration-none">ID000003 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000004"><a href="infoAnimale.html?id=ID000004" class="text-dark text-decoration-none">ID000004 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000005"><a href="infoAnimale.html?id=ID000005" class="text-dark text-decoration-none">ID000005 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000006"><a href="infoAnimale.html?id=ID000006" class="text-dark text-decoration-none">ID000006 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000007"><a href="infoAnimale.html?id=ID000007" class="text-dark text-decoration-none">ID000007 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000008"><a href="infoAnimale.html?id=ID000008" class="text-dark text-decoration-none">ID000008 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000009"><a href="infoAnimale.html?id=ID000009" class="text-dark text-decoration-none">ID000009 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000010"><a href="infoAnimale.html?id=ID000010" class="text-dark text-decoration-none">ID000010 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000011"><a href="infoAnimale.html?id=ID000011" class="text-dark text-decoration-none">ID000011 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000012"><a href="infoAnimale.html?id=ID000012" class="text-dark text-decoration-none">ID000012 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000013"><a href="infoAnimale.html?id=ID000013" class="text-dark text-decoration-none">ID000013 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000014"><a href="infoAnimale.html?id=ID000014" class="text-dark text-decoration-none">ID000014 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000015"><a href="infoAnimale.html?id=ID000015" class="text-dark text-decoration-none">ID000015 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000016"><a href="infoAnimale.html?id=ID000016" class="text-dark text-decoration-none">ID000016 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000017"><a href="infoAnimale.html?id=ID000017" class="text-dark text-decoration-none">ID000017 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000018"><a href="infoAnimale.html?id=ID000018" class="text-dark text-decoration-none">ID000018 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000019"><a href="infoAnimale.html?id=ID000019" class="text-dark text-decoration-none">ID000019 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000020"><a href="infoAnimale.html?id=ID000020" class="text-dark text-decoration-none">ID000020 </a></span></li>
+          </ul>
+        </div>
+        <div class="col-md-9" style="">
+          <div class="w-100 h-100 col-md-12">
+            <h1 class="text-center display-4" style="" id="idAnimale">Dettaglio Animale:</h1>
+            <div class="row w-100 mt-4">
+              <div class="col-md-12" style="">
+                <div class="table-responsive">
+                  <table class="table">
+                    <tbody>
+                      <tr class="">
+                        <td class="w-50 p-1 text-right">Marchio di identificazione:&nbsp;</td>
+                        <td class="p-1">IT6789YT</td>
+                      </tr>
+                      <tr>
+                        <td class="p-1 text-right">Razza:&nbsp;</td>
+                        <td class="p-1">Pezzata rossa</td>
+                      </tr>
+                      <tr>
+                        <td class="p-1 text-right">Sesso:&nbsp;</td>
+                        <td class="p-1">F </td>
+                      </tr>
+                      <tr>
+                        <td class="p-1 text-right">Codice madre:&nbsp;</td>
+                        <td class="p-1" contenteditable="true">IT6745PZ </td>
+                      </tr>
+                      <tr>
+                        <td class="p-1 text-right">Data di nascita:&nbsp;</td>
+                        <td class="p-1" contenteditable="true">28/11/2015</td>
+                      </tr>
+                      <tr>
+                        <td class="p-1 text-right">Data ingresso stalla:&nbsp;</td>
+                        <td class="p-1">28/11/2015</td>
+                      </tr>
+                      <tr>
+                        <td class="p-1 text-right" contenteditable="true">Nascita in azienda o acquistata:&nbsp;</td>
+                        <td class="p-1" style="">&nbsp;NA</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="row my-4">
+              <div class="col-md-12">
+                <h5 class="text-center text-dark" style="">Livello batteria: 32%</h5>
+              </div>
+            </div>
+            <div class="row flex-grow-0 w-100 align-items-end d-inline-flex flex-row justify-content-center" style="">
+              <div class="col-md-6 text-center"><a class="btn btn-secondary text-center" href="posizione4.html">Visualizza posizione</a></div>
+              <div class="col-md-6 text-center"><a class="btn btn-secondary" href="#">Visualizza storico calori</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-3 flex-grow-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center d-md-flex align-items-center"> <i class="d-block fa fa-stop-circle fa-2x mr-md-5 text-primary"></i>
+            <ul class="nav mx-md-auto d-flex justify-content-center">
+              <li class="nav-item"> <a class="nav-link active" href="home.html">Home</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="prezzo.html">Prezzo</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="chiSiamo.html">Chi siamo</a> </li>
+            </ul>
+            <div class="row">
+              <div class="col-md-12 d-flex align-items-center justify-content-md-between justify-content-center my-2"> <a href="#">
+                  <i class="d-block fa fa-facebook-official text-muted fa-lg mx-2"></i>
+                </a> <a href="#">
+                  <i class="d-block fa fa-instagram text-muted fa-lg mx-2"></i>
+                </a> <a href="#">
+                  <i class="d-block fa fa-twitter text-muted fa-lg ml-2"></i>
+                </a> </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p class="mt-2 mb-0">© 2014-2018 Pingendo. All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" style=""></script>
+    <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+    <script type="text/javascript" src="funzioniScript.js"> </script>
+  </div>
+</body>
+
+</html>

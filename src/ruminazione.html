@@ -37,35 +37,31 @@
     <div class="container">
       <div class="row h-100 w-100">
         <div class="m-0 destra h-100 col-md-3" style="">
-          <form class="form-inline w-100">
-            <div class="input-group input-group-lg">
-              <input type="text" class="form-control w-75" id="inlineFormInputGroup" placeholder="Search">
-              <div class="input-group-append"><button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></div>
-            </div>
-          </form>
-          <ul class="list-group m-0 laterale p-0 text-right lista h-100">
-            <li class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center"> ID000001</li>
-            <li class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center"> ID000002</li>
-            <li class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center"> ID000003</li>
-            <a href="ruminazione4.html">
-              <li class="list-group-item align-items-center p-0 py-1 justify-content-center text-dark d-flex border rounded-0 border-info w-100"> ID000004</li>
-            </a>
-            <li class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center"> ID000005</li>
-            <li class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center"> ID000006</li>
-            <li class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center"> ID000007</li>
-            <li class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center"> ID000008</li>
-            <li class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center"> ID000009</li>
-            <li class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center"> ID000010</li>
-            <li class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center"> ID000011</li>
-            <li class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center"> ID000012</li>
-            <li class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center"> ID000013</li>
-            <li class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center"> ID000014</li>
-            <li class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center"> ID000015</li>
-            <li class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center"> ID000016</li>
-            <li class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center"> ID000017</li>
-            <li class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center"> ID000018</li>
-            <li class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center"> ID000019</li>
-            <li class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center"> ID000020</li>
+          <div class="input-group input-group-lg">
+            <input type="text" id="barra-ricerca" placeholder="Cerca" onkeyup="ricerca('barra-ricerca', 'elenco')" class="form-control w-75">
+            <div class="input-group-append"><button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></div>
+          </div>
+          <ul id="elenco" class="list-group m-0 laterale p-0 text-right lista h-100">
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000001"><a href="infoRuminazione.html?id=ID000001" class="text-dark text-decoration-none">ID000001 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000002"><a href="infoRuminazione.html?id=ID000002" class="text-dark text-decoration-none">ID000002 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000003"><a href="infoRuminazione.html?id=ID000003" class="text-dark text-decoration-none">ID000003 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000004"><a href="infoRuminazione.html?id=ID000004" class="text-dark text-decoration-none">ID000004 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000005"><a href="infoRuminazione.html?id=ID000005" class="text-dark text-decoration-none">ID000005 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000006"><a href="infoRuminazione.html?id=ID000006" class="text-dark text-decoration-none">ID000006 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000007"><a href="infoRuminazione.html?id=ID000007" class="text-dark text-decoration-none">ID000007 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000008"><a href="infoRuminazione.html?id=ID000008" class="text-dark text-decoration-none">ID000008 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000009"><a href="infoRuminazione.html?id=ID000009" class="text-dark text-decoration-none">ID000009 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000010"><a href="infoRuminazione.html?id=ID000010" class="text-dark text-decoration-none">ID000010 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000011"><a href="infoRuminazione.html?id=ID000011" class="text-dark text-decoration-none">ID000011 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000012"><a href="infoRuminazione.html?id=ID000012" class="text-dark text-decoration-none">ID000012 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000013"><a href="infoRuminazione.html?id=ID000013" class="text-dark text-decoration-none">ID000013 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000014"><a href="infoRuminazione.html?id=ID000014" class="text-dark text-decoration-none">ID000014 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000015"><a href="infoRuminazione.html?id=ID000015" class="text-dark text-decoration-none">ID000015 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000016"><a href="infoRuminazione.html?id=ID000016" class="text-dark text-decoration-none">ID000016 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000017"><a href="infoRuminazione.html?id=ID000017" class="text-dark text-decoration-none">ID000017 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000018"><a href="infoRuminazione.html?id=ID000018" class="text-dark text-decoration-none">ID000018 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000019"><a href="infoRuminazione.html?id=ID000019" class="text-dark text-decoration-none">ID000019 </a></span></li>
+            <li><span class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000020"><a href="infoRuminazione.html?id=ID000020" class="text-dark text-decoration-none">ID000020 </a></span></li>
           </ul>
         </div>
         <div class="col-md-9" style="">
@@ -73,7 +69,7 @@
             <h1 class="text-center display-4" style="">Ruminazione</h1>
             <div class="row">
               <div class="col-md-12">
-                <h5 class="text-center">Per analizzarei i dati sulla ruminazione di un'animale selezionare l'id dal menù laterale(ID000004)</h5>
+                <h5 class="text-center">Per analizzarei i dati sulla ruminazione di un'animale selezionare l'id dal menù laterale</h5>
               </div>
             </div>
           </div>
@@ -112,6 +108,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" style=""></script>
   <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+  <script src="funzioniScript.js" type="text/javascript" style=""> </script>
 </body>
 
 </html>

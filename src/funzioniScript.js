@@ -79,3 +79,55 @@ function chiudiNotifica() {
     var x = document.getElementById("notifica");
     x.style.display = "none";
 } 
+
+function successMessageVaccino() {
+    var x = document.getElementById("inlineFormInputGroup");
+    var y = document.getElementById("inlineFormInputGroup2");
+    if (x.value != "" && y.value != "") {
+        alert("Vaccino inserito con successo!");
+        x.value = "";
+        y.value = "";
+    } else {
+        if (x.value == "") {
+            alert("Inserire data!");
+        } else {
+            alert("Inserire nome farmaco!");
+        }
+    }
+}
+
+function successMessageFarmaco() {
+    var x = document.getElementById("dataInizio");
+    var y = document.getElementById("inlineFormInputGroup");
+    var z = document.getElementById("inlineFormInputGroup2");
+    if (x.value != "" && y.value != "" && z.value != "") {
+        alert("Farmaco inserito con successo!");
+        x.value = "";
+        y.value = "";
+        z.value = "";
+    } else {
+        if (x.value == "") {
+            alert("Inserire data inizio!");
+        } else if (y.value == "") {
+            alert("Inserire data fine!");
+        } else {
+            alert("Inserire nome farmaco!")
+        }
+    }
+}
+
+function successMessagePodologo() {
+    var x = document.getElementById("inlineFormInputGroup");
+    var y = document.getElementById("exampleTextarea");
+    if (x.value != "" && y.value != "") {
+        alert("Visita podologo inserita con successo!");
+        x.value = "";
+        y.value = "";
+    } else {
+        if (x.value == "") {
+            alert("Inserire data visita!");
+        } else {
+            alert("Inserire nota podologo!")
+        }
+    }
+}

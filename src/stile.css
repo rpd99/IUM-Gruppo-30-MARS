@@ -7127,3 +7127,5 @@ a.text-dark:hover, a.text-dark:focus {
 .laterale {
   overflow: hidden;
   overflow-y: scroll; }
+
+.clickable { cursor: pointer; }

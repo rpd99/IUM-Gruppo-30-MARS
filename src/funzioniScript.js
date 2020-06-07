@@ -83,10 +83,14 @@ function chiudiNotifica() {
 function successMessageVaccino() {
     var x = document.getElementById("inlineFormInputGroup");
     var y = document.getElementById("inlineFormInputGroup2");
+    var notifica = document.getElementById("notifica");
     if (x.value != "" && y.value != "") {
-        alert("Vaccino inserito con successo!");
-        x.value = "";
-        y.value = "";
+        var v = confirm("Inserire vaccino?");
+        if(v===true){
+            x.value = "";
+            y.value = "";
+            notifica.style.display = "block";
+        }
     } else {
         if (x.value == "") {
             alert("Inserire data!");
@@ -101,10 +105,13 @@ function successMessageFarmaco() {
     var y = document.getElementById("inlineFormInputGroup");
     var z = document.getElementById("inlineFormInputGroup2");
     if (x.value != "" && y.value != "" && z.value != "") {
-        alert("Farmaco inserito con successo!");
-        x.value = "";
-        y.value = "";
-        z.value = "";
+        var v = confirm("Inserire farmaco?");
+        if(v===true) {
+            x.value = "";
+            y.value = "";
+            z.value = "";
+            document.getElementById("notifica").style.display = "block";
+        }
     } else {
         if (x.value == "") {
             alert("Inserire data inizio!");
@@ -120,9 +127,12 @@ function successMessagePodologo() {
     var x = document.getElementById("inlineFormInputGroup");
     var y = document.getElementById("exampleTextarea");
     if (x.value != "" && y.value != "") {
-        alert("Visita podologo inserita con successo!");
-        x.value = "";
-        y.value = "";
+        var v = confirm("Inserire visita podologo?");
+        if(v===true) {
+            x.value = "";
+            y.value = "";
+            document.getElementById("notifica").style.display = "block";
+        }
     } else {
         if (x.value == "") {
             alert("Inserire data visita!");

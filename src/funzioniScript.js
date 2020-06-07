@@ -5,11 +5,25 @@ function caricamentoPagina(str) {
     document.getElementById("idAnimale").innerHTML = str + idAnimale;
     document.getElementById(idAnimale).className = "list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center active w-100";
     var a = document.getElementById('aggiuntaFarmaco');
-    a.href = "aggiuntaFarmaco.html?id="+idAnimale;
+    if(a!=null)
+        a.href = "aggiuntaFarmaco.html?id="+idAnimale;
     var b = document.getElementById('aggiuntaVaccino');
-    b.href = "aggiuntaVaccino.html?id="+idAnimale;
+    if(b!=null)
+        b.href = "aggiuntaVaccino.html?id="+idAnimale;
     var c = document.getElementById('aggiuntaPodologo');
-    c.href = "aggiuntaPodologo.html?id="+idAnimale;
+    if(c!=null)
+        c.href = "aggiuntaPodologo.html?id="+idAnimale;
+    var d = document.getElementById('portaHome');
+    if(d!=null)
+        d.href = "home.html?id="+idAnimale;
+}
+
+function caricamentoHome() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const idAnimale = urlParams.get('id')
+    if(idAnimale!=null)
+        localizzaMucca(idAnimale);
 }
 
 function caricamentoPosizione(){

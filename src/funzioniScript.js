@@ -16,6 +16,9 @@ function caricamentoPagina(str) {
     var d = document.getElementById('portaHome');
     if(d!=null)
         d.href = "home.html?id="+idAnimale;
+    var e = document.getElementById('infoCalori');
+    if(e!=null)
+        e.href = "infoCalori.html?id="+idAnimale;
 }
 
 function caricamentoHome() {
@@ -66,7 +69,7 @@ function localizzaMucca(muccaCliccata) {
     .mapster('set',false,muccaCorrente);
     document.getElementById(muccaCorrente).classList.remove("active");
     }
-    
+
     document.getElementById(muccaCliccata).classList.add("active");
 
     $('#mappa-stalla').mapster({
@@ -91,8 +94,22 @@ function apriNotifica() {
 
 function chiudiNotifica() {
     var x = document.getElementById("notifica");
-    x.style.display = "none";
-} 
+    if(x!=null){
+      x.style.display = "none";
+    }
+    var a = document.getElementById("notificaSuccess");
+    if(a!=null){
+      a.style.display = "none";
+    }
+    var b = document.getElementById("notificaError");
+    if(b!=null){
+      b.style.display = "none";
+    }
+    var c =   document.getElementById("notificaSuccessAgg");
+    if(c!=null){
+      c.style.display = "none";
+    }
+}
 
 function successMessageVaccino() {
     var x = document.getElementById("inlineFormInputGroup");
@@ -153,5 +170,69 @@ function successMessagePodologo() {
         } else {
             alert("Inserire nota podologo!")
         }
+    }
+}
+
+function controlloLogin() {
+  var email = document.getElementById("form13").value;
+  var password = document.getElementById("form15").value;
+  if(email != "username"){
+    alert("Username non presente!");
+    return false;
+  }else if(password != "Password1"){
+    alert("Password non corretta");
+    return false;
+  }else{
+    document.invio.action = "home.html";
+    document.invio.submit();
+  }
+}
+
+function aggiuntaAnimale() {
+  var a = document.getElementById("marchio").value;
+  var b = document.getElementById("razza").value;
+  var c = document.getElementById("sesso").value;
+  var d = document.getElementById("codiceMadre").value;
+  var e = document.getElementById("nascita").value;
+  var f = document.getElementById("dataIngresso").value;
+  var g = document.getElementById("azienda").value;
+
+  var x =   document.getElementById("notificaSuccess");
+  var y =   document.getElementById("notificaError");
+
+  if (a != "" && b != "" && c != "" && d != "" && e != "" && f != ""&& g != "") {
+      var v = confirm("Inserire animale?");
+      if(v===true){
+          a.value = "";
+          b.value = "";
+          c.value = "";
+          d.value = "";
+          e.value = "";
+          f.value = "";
+          g.value = "";
+          if (x.style.display === "none") {
+              x.style.display = "block";
+          }
+      }
+  } else {
+      if (y.style.display === "none") {
+          y.style.display = "block";
+      }
+    }
+}
+function aggiornaVeterinario() {
+  var a = document.getElementById("numero").value;
+  var x =   document.getElementById("notificaSuccessAgg");
+  var y =   document.getElementById("notificaError");
+
+  if(a!=""){
+    a.value="";
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    }
+  }else {
+      if (y.style.display === "none") {
+          y.style.display = "block";
+      }
     }
 }

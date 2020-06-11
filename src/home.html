@@ -10,7 +10,7 @@
 
 <body onload="caricamentoHome()">
   <nav class="navbar navbar-expand-md navbar-light pt-0">
-    <div class="container-fluid"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" class="clickable" data-toggle="collapse" class="clickable" data-target="#navbar6">
+    <div class="container-fluid"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar6">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbar6"> <a class="navbar-brand text-primary d-none d-md-block">
@@ -24,7 +24,7 @@
           <li class="nav-item"> <a class="nav-link" href="calori.html">Calori</a> </li>
           <li class="nav-item"> <a class="nav-link" href="notifiche.html">Notifiche</a> </li>
           <li class="nav-item" style=""> <a class="nav-link" href="veterinario.html">Contatta veterinario</a> </li>
-          <li class="nav-item"> <a class="nav-link">Impostazioni</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="impostazioni.html">Impostazioni</a> </li>
         </ul>
       </div>
       <div class="row">
@@ -64,10 +64,18 @@
             <li class="clickable"><span onclick="localizzaMucca('ID000021')" class="list-group-item align-items-center d-inline-flex p-0 py-1 justify-content-center w-100" id="ID000021"><a class="text-dark text-decoration-none">ID000021 </a></span></li>
           </ul>
         </div>
-
         <div class="col-md-9" style="">
-
-          <img src="mappa.png" usemap="#image-map" id="mappa-stalla">
+          <div class="row flex-grow-1 w-100 m-0 justify-content-center d-inline-flex align-items-stretch p-0 pl-4 pt-0 pb-2">
+            <div class="col-md-4 flex-grow-0" style="">
+              <div class="col-md-12 w-100" style=""><i class="fa fa-square fa-2x" style="color:#7FFF00	"></i> Livello batteria &gt; 30%</div>
+            </div>
+            <div class="col-md-4 w-100" style="">
+              <div class="col-md-12 w-100 p-0" style=""><i class="fa fa-square fa-2x" style="color:#ea982c	"></i> Livello batteria &lt; 30%</div>
+            </div>
+            <div class="col-md-4" style="">
+              <div class="col-md-12 w-100" style=""><i class="fa fa-square fa-2x" style="color:#FF0000	"></i> Livello batteria &lt; 10%</div>
+            </div>
+          </div><img src="mappa.png" usemap="#image-map" id="mappa-stalla" class="border border-dark">
           <map name="image-map" id="image-map">
             <area class="clickable" data-key="ID000001" alt="ID000001" coords="100,11,211,60" shape="rect" onclick="localizzaMucca('ID000001')" style="">
             <area class="clickable" data-key="ID000002" alt="ID000002" coords="661,27,788,58" shape="rect" onclick="localizzaMucca('ID000002')">
@@ -91,12 +99,20 @@
             <area class="clickable" data-key="ID000020" alt="ID000020" shape="poly" onclick="localizzaMucca('ID000020')" coords="751,89,761,67,779,72,797,72,811,81,822,89,834,101,843,107,848,120,847,130,847,142,842,149,832,152,819,151">
             <area class="clickable" data-key="ID000021" alt="ID000021" coords="725,621,626,693" shape="rect" onclick="localizzaMucca('ID000021')">
           </map>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-3 flex-grow-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center d-md-flex align-items-center"> <i class="d-block fa fa-stop-circle fa-2x mr-md-5 text-primary"></i>
           <div class="row">
-            <div class="col-md-12 d-flex align-items-center justify-content-md-between justify-content-center my-2"> <a>
+            <div class="col-md-12 d-flex align-items-center justify-content-md-between justify-content-center my-2"> <a href="#">
                 <i class="d-block fa fa-facebook-official text-muted fa-lg mx-2"></i>
-              </a> <a>
+              </a> <a href="#">
                 <i class="d-block fa fa-instagram text-muted fa-lg mx-2"></i>
-              </a> <a>
+              </a> <a href="#">
                 <i class="d-block fa fa-twitter text-muted fa-lg ml-2"></i>
               </a> </div>
           </div>
